@@ -1,0 +1,37 @@
+1. 알고리즘 및 탐색 (BFS)
+너비 우선 탐색 (BFS, Breadth-First Search): 그래프나 트리 구조에서 가까운 노드부터 탐색할 때 큐를 사용하여 방문할 노드들을 순서대로 저장합니다.
+최단 경로 찾기: 미로 찾기나 지도에서 최단 거리를 계산할 때 BFS 알고리즘과 함께 활용됩니다. 
+2. 작업 스케줄링 및 대기열
+프린터 인쇄 대기열: 여러 문서가 인쇄 요청을 할 때, 먼저 요청된 문서가 먼저 인쇄되는 경우.
+CPU 작업 스케줄링: 운영체제에서 프로세스들이 CPU를 사용하기 위해 순서를 기다리는 대기열.
+콜센터 고객 대기 시간: 전화를 먼저 건 고객의 순서대로 상담원이 연결되는 시스템. 
+3. 버퍼링 및 데이터 스트리밍
+동영상 스트리밍: 데이터를 미리 받아서 큐에 저장해두고, 순서대로 재생하여 끊김을 방지.
+I/O 버퍼: 파일 입출력이나 네트워크 통신에서 데이터를 보내는 속도와 받는 속도의 차이를 완충할 때. 
+YouTube
+YouTube
+ +1
+4. 큐의 실제 코딩 예시 (Python)
+python
+from collections import deque
+
+# 큐 생성
+queue = deque()
+
+# 데이터 삽입 (Enqueue)
+queue.append(1)
+queue.append(2)
+queue.append(3)
+
+# 데이터 추출 (Dequeue)
+print(queue.popleft()) # 1 출력
+print(queue.popleft()) # 2 출력
+print(queue.popleft()) # 3 출력
+5. 큐의 종류
+선형 큐 (Linear Queue): 기본적인 일자형 큐.
+원형 큐 (Circular Queue): 고정된 크기에서 공간을 재활용하는 큐.
+우선순위 큐 (Priority Queue): 들어온 순서와 관계없이 우선순위가 높은 데이터가 먼저 나가는 큐. 
+YouTube
+YouTube
+ +2
+큐는 이처럼 "순서대로 처리해야 하는 모든 상황"에 필수적으로 사용됩니다. 

@@ -1,0 +1,18 @@
+선형 리스트 중 연속 리스트(Contiguous List, 주로 배열/Array로 구현)는 데이터를 메모리상에 물리적으로 연속되게 배치하는 자료구조입니다. 검색 속도가 빠르고 인덱스를 통해 바로 접근할 수 있다는 장점이 있습니다.
+
+고정된 크기의 데이터 목록 관리 (배열)
+in scores[30];
+char* days[7];
+
+고차원 데이터 처리 (다차원 배열)
+int board[8][8];
+pixel_t image[height][width];
+
+스택(Stack)과 큐(Queue)의 구현
+배열 기반의 Stack/Queue는 데이터가 연속적으로 들어가며, 고정 크기 버퍼가 필요할 때 사용됩니다.
+
+고속 데이터 검색 및 위치 기반 접근
+user_list[154]와 같이 특정 번째 데이터를 즉시 가져올 때 유리합니다.
+
+고성능 래퍼 클래스 (벡터 - Vector, ArrayList)
+파이썬의 리스트(List), C++의 std::vector, Java의 ArrayList.

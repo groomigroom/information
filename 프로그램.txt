@@ -1,0 +1,12 @@
+컴퓨터는
+소프트웨어
+system program (operating program),
+application program
+
+program language
+low language
+high language
+
+middle ware 가 c언어랑 자바
+
+하드웨어

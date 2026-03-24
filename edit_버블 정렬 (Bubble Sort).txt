@@ -4,13 +4,18 @@
 기본 구현 (파이썬): 리스트를 순회하며 인접 요소를 비교하여 큰 값을 오른쪽으로 이동.
 
 python
+
 def bubble_sort(arr):
-    n = len(arr)
-    for i in range(n):
-        for j in range(0, n-i-1):
-            if arr[j] > arr[j+1]:
-                arr[j], arr[j+1] = arr[j+1], arr[j] # Swap
-    return arr
+  n = len(arr)
+ 
+  for i in range(n):
+    for j in range(0, n-i-1):
+      if arr[j] > arr[j+1]:
+        arr[j], arr[j+1] = arr[j+1], arr[j]
+
+  return arr
+
+print(bubble_sort([5, 3, 8, 4, 2]))
 
 사용 예시 1 - 교육 및 로직 이해: 알고리즘의 기초를 배울 때 정렬의 기본 동작 원리(비교 및 교환)를 보여주는 가장 직관적인 예시.
 사용 예시 2 - 작은 규모의 데이터: 데이터의 개수가 매우 적어 

@@ -286,7 +286,27 @@ MySQL에서 WHERE A.names LIKE B.rules는 테이블 A의 names 컬럼에 있는 
 
  -----
 
- 
+COUNT(DISTINCT 컬럼명)
+
+예시: 
+
+CREATE TABLE countee (
+  id VARCHAR(50)
+);
+
+INSERT INTO countee
+VALUES
+("구름"),
+("구름"),
+("구구"),
+(NULL),
+("구름구");
+
+SELECT COUNT(DISTINCT id)
+FROM countee;
+
+
+-----
 
 CROSS JOIN 
 

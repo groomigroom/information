@@ -3,6 +3,44 @@ c언어 --------------------------
 예제 -----
 
 #include <stdio.h>
+
+int r1(){
+  return 4;
+}
+int r10(){
+  return(30+r1());
+}
+int r100(){
+  return(200+r10());
+}
+int main(){
+  printf("%d", r100());
+  return 0;
+}
+
+답은 234
+
+
+--------
+
+#include <stdio.h>
+int main()
+{
+  int i, c = 0;
+  while(i < 10) {
+    i++;
+    c *= i;
+  }
+  printf("%d", c);
+}
+
+답은 0
+
+
+------
+
+
+#include <stdio.h>
 #define SIZE 5
 
 int main(void)
@@ -72,6 +110,12 @@ int main() {
 }
 
  
+
+-----
+
+C++ 생성자 -----
+
+객체 생성시 초기화 작업을 위한 함수. 객체를 생성할 때 자동으로 호출되고 제일 먼저 실행됨. new 연산자를 통해서 갤체를 생성할 때 반드시 호출되고 제일 먼저 실행되는 일종의 메소드.
 
 -----
 

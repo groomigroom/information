@@ -93,3 +93,27 @@ CROSS JOIN
  
 
  -----
+
+INDEX -----
+
+SQL에서 인덱스(Index)는 테이블의 데이터 검색 속도를 향상시키기 위해 특정 컬럼의 값을 기준으로 별도의 정렬된 자료구조(주로 B-Tree)를 생성해두는 데이터베이스 객체입니다. 책 뒤의 '찾아보기'처럼 데이터 위치 정보(ROWID)를 정렬하여 저장하므로, 전체 테이블을 스캔(Full Scan)하지 않고 빠르게 원하는 행을 찾습니다.핵심 요약 및 특징목적: 데이터베이스 조회(SELECT) 성능 향상.원리: 설정한 컬럼의 데이터를 복사하여 정렬하고 B-Tree/B+Tree 구조로 관리.장점: SELECT 문의 속도가 매우 빨라짐.단점: 별도 저장 공간이 필요하며, 데이터 추가/수정/삭제(INSERT, UPDATE, DELETE) 시 인덱스도 갱신해야 하므로 성능이 저하될 수 있음.인덱스 사용 시 고려사항필요한 경우: 데이터 양이 많고, 해당 컬럼이 WHERE절이나 조인(JOIN) 조건으로 자주 사용될 때.피해야 하는 경우: 데이터 수정이 빈번하거나, 데이터 전체를 조회하는 경우.
+
+
+student 테이블의 stu_name 속성에는 idx_name 이름의 인덱스 생성
+
+CREATE TABLE student(
+  stu_name VARCHAR(50),
+  stu_home INTEGER
+);
+
+INSERT INTO student
+VALUES
+("김구름이", 1),
+("김구르음", 3),
+("김구음름", 4),
+("김구구", 5);
+
+CREATE INDEX idx_name
+ON student(stu_name);
+
+------

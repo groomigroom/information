@@ -274,9 +274,10 @@ public class Gisafirst {
     for(int i = 0; i < nSize; i++){
       arr[i] = i;
     }
-  }
-  
+  }  
 }
+
+결과 0 1 2 3
 
 -----
 
@@ -298,6 +299,8 @@ public class Gisafirst {
     pa.print();
   }
 }
+
+결과 Child
 
 -----
 

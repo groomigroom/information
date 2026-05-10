@@ -63,6 +63,33 @@ MySQL에서 WHERE A.names LIKE B.rules는 테이블 A의 names 컬럼에 있는 
 
  -----
 
+
+개념 --------------------------------------------------------------------------
+
+데이터 추가 -----
+
+ALTER TABLE 학생
+ADD 주소 VARCHAR(20);
+
+-----
+
+제약 조건  -----
+
+UNIQUE
+
+ -----
+
+집계 함수 -----
+
+MIN MAX AVG
+
+예시 SELECT 과목이름, MIN(점수) AS 최소점수, MAX(점수) AS 최대점수
+FROM 성적
+GROUP BY 과목이름
+HAVING AVG(점수) >= 90;
+
+-----
+
 COUNT(DISTINCT 컬럼명)
 
 예시: 
@@ -93,6 +120,13 @@ CROSS JOIN
  
 
  -----
+
+DELETE 
+
+예시 DELETE FROM 학생
+WHERE 이름 = '민수';
+
+-----
 
 INDEX -----
 

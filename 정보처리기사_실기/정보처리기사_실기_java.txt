@@ -2,6 +2,24 @@ Java----------------------------------------
 
 예제 -----
 
+public class Groomi{
+  public static void main(String[] args){
+    int i = 0;
+    int sum = 0;
+    while(i < 10){
+      i++;
+      if(i % 2 == 1)
+        continue;
+      sum +=i;
+    }
+    System.out.print(sum);
+  }
+}
+
+답 30
+
+-----
+
 class A {
   int a;
   public A(int n){
@@ -79,6 +97,21 @@ public class Gisafirst {
 }
 
 결과 Child
+
+-----
+
+추상 클래스 -----
+
+추상 클래스 (Abstract class) -> 미완성 설계도
+클래스들의 공토오디는 필드와 메소드를 정의한 구체적이지 않은 클래스
+상위 클래스에는 메소드의 시근니쳐만 정의해 놓고 그 메소드의 실제 동작 방법은 이 메소드를 상속받은 하위 클래스의 책임으로 위임한다.
+
+형식 abstract class 클래스명 {
+	,,,,
+}
+
+추상 클래스 객체는 생성할 수 없다. -> 실체성이 없고 구체적이지 않으므로.
+추상 클래스와 실체 클래스는 상속 관계(extends)를 가진다.
 
 -----
 

@@ -160,3 +160,9 @@ CREATE INDEX idx_name
 ON student(stu_name);
 
 ------
+
+<pre>
+https://www.youtube.com/watch?v=xK3UlibfjaM&list=PLz95GL3y9Hv0fbwTxWqc3dni3hCA7OXgj&index=9
+
+3분 55초 5번
+</pre>

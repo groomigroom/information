@@ -1,0 +1,351 @@
+https://www.youtube.com/watch?v=u9Ke1bknvDg&list=PLz95GL3y9Hv0fbwTxWqc3dni3hCA7OXgj&index=9
+
+이거부터 보기 --------------
+
+
+https://www.youtube.com/watch?v=TCwfzag23G8&list=PLz95GL3y9Hv0fbwTxWqc3dni3hCA7OXgj&index=7
+
+
+11분 54초 13번 부터 보기
+
+
+https://www.youtube.com/watch?v=sTq9uMtz49g&list=PLz95GL3y9Hv0fbwTxWqc3dni3hCA7OXgj&index=6
+
+2회
+
+24분 34초 LINUX 휴대폰 카메라 내용 확인해서 작성하기 ...
+
+
+https://www.youtube.com/watch?v=W2Gy0MtWGRk&list=PLz95GL3y9Hv0fbwTxWqc3dni3hCA7OXgj&index=7
+
+17분 39초 분기 커버리지 순서 배열 파악하기.
+
+https://www.youtube.com/watch?v=W2Gy0MtWGRk&list=PLz95GL3y9Hv0fbwTxWqc3dni3hCA7OXgj&index=6
+
+이거부터 보기 3회
+
+
+
+-----
+
+abstract class groom {
+  String name;
+  abstract public String getName(String val);
+  public String getName(){
+    return "Vehicle name:" + name;
+  }
+}
+class Car extends Vehicle {
+  String name;
+  public Car(String val){
+    name = super.name = val;
+  }
+  public String getName(String val){
+    return "Car name:"+val;
+  }
+  public String getName(byte val[]){
+    return "Car name:"+val;
+  }
+}
+public class groomgroom {
+  public static void main(String args[]){
+    Vehicle obj = new Car("Spark");
+    System.out.print(obj.getName());
+  }
+}
+
+
+-------수정 필요 -----
+
+이론 --------------------------
+
+<h3>접근 통제 (Accesss control, 접근 제어)</h3>
+
+<pre>
+
+사용자가 특정 데이터에 접근할 때 접근을 요구하는 사용자에 대한 식별과 보안 정책에 근거하여 접근을 승인하거나 거부하여 허가받지 않은 불법적 자원에 대한 접근과 파괴 등의 행위를 예방하는 보안 관리의 모든 행위를 의미.
+
+</pre>
+
+<h3>임의 접근 통제 (DAC: Discretionary Access Control, 신분 기반 정책)</h3>
+
+<pre>
+
+자원에 접근하는 사용자의 신원에 따라 접근 권한을 부여하는 방식. 해당 자원의 소유권을 가진 사람이 다른 사용자가 자신의 자원에 접근하려 했을 때 접근통제 권한을 지정하고 제어할 수 있다. (예: DCL: GRANT, REVOKE)
+
+</pre>
+
+<h3>강제 접근 통제(MAC: Mandatory Access Control, 규칙 기반 정책)</h3>
+
+<pre>
+
+사용자나 자원(객체) 모두 보안 레벨(등급)을 부여 받아 서로의 레벨을 비교하여 접근 권한을 부여하는 방식. 제 3자가 접근 통제 권한을 지정한다. 데이터베이스 객체 (테이블, 뷰 등) 별로 보안 등급을 부여할 수 있고, 사용자 별로 인가 등급을 부여할 수 있다. 주체보다 보안 등급이 높은 객체 대해서는 읽기, 수정, 등록 모두 불가능.
+
+</pre>
+
+<h3>역할기반 접근 통제 (RBAC: Role-Based Access Control)</h3>
+
+<pre>
+
+사용자에게 할당된 역할(Role)에 기반하여 접근 권한을 부여하는 방식 -> 직책에 권한을 부여. 사용자가 바뀌어도 역할에는 변함 없음.
+
+</pre>
+
+<h3>결합도</h3>
+
+<h3>자료 결합도</h3>
+
+<pre>
+
+
+
+</pre>
+
+<h3>스탬프 결합도</h3>
+
+<pre>
+
+모듈 간의 인터페이스로 배열이나 오브젝트 (object), 자료구조 (structure) 등이 전달되는 경우.
+
+</pre>
+
+<h3>제어 결합도</h3>
+
+<pre>
+
+
+
+</pre>
+
+
+<h3>공통 결합도</h3>
+
+<pre>
+
+파라미터가 아닌 모듈 밖에서 선언되어 있는 전역 변수를 참조하고 전역 변수를 갱신하는 식으로 상호 작용하는 경우.
+
+</pre>
+
+
+<h3>내용 결합도</h3>
+
+<pre>
+
+다른 모듈 내부에 있는 변수나 기능을 다른 모듈에서 사용하는 경우.
+
+</pre>
+
+<h3>외부 결합도</h3>
+
+<pre>
+
+
+
+</pre>
+
+<h3>세션 하이재킹(Session Hijacking)</h3>
+
+<pre>
+
+세션을 가로채다라는 의미로, 정당한 사용자의 세션 상태를 훔치거나 도용하여, 액세스하는 보안 공격 기법이다. TCP ()은 클라이언트/서버 간 TCP 세션으로 통신 중일 때, RST 패킷을 보내어 일시적으로 희생자의 세션을 끊고 공격자에게 서버와의 연결을 재설정하는 보안 공격이다.
+
+</pre>
+
+
+java ----------------------
+
+
+https://www.youtube.com/watch?v=xK3UlibfjaM&list=PLz95GL3y9Hv0fbwTxWqc3dni3hCA7OXgj&index=11
+
+17번 34분 6초
+
+
+-------
+
+package javas;
+
+public class javas {
+
+   public static void main(String[] args) {
+      System.out.println("1 ~ 10 = " + calcSum(1, 10));
+      System.out.println("2 ~ 10 = " + calcSum(2, 10));
+
+   }
+   
+   static int calcSum(int from, int to) {
+      int sum = 0;
+      for(int i = from; i <= to; i++) {
+         sum += i;
+      }
+      return sum;
+   }
+
+}
+
+
+-------
+
+package javas;
+
+public class javas {
+
+   public static void main(String[] args) {
+      int year = 2026;
+      int month = 12;
+      
+      int days = getMonthDays(year, month);
+      System.out.println(year + "년도" + month + "월은" + days + "일까지 이다.");
+   }
+   
+   static int getMonthDays(int year, int month) {
+      int[] arDays = {0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
+      
+      if(month == 2) {
+         if((year % 4 == 0 && year % 100 != 0) || year % 400 == 0) {
+            return 29;
+         }
+         return 28;
+      } else {
+         return arDays[month];
+      }
+   }
+}
+
+
+-------
+
+#####
+
+import java.time.LocalDate;
+
+package javas;
+
+public class javas {
+
+   public static void main(String[] args) {
+      System.out.println("오늘은 " + getDate() + "일입니다.");
+   }
+   static int getDate() {
+      java.time.LocalDate today = java.time.LocalDate.now();
+      int day = today.getDayOfMonth();
+      return day;
+   }
+}
+
+
+------
+
+package javas;
+
+public class javas {
+
+   public static void main(String[] args) {
+      System.out.println("1 ~ 10 = " + calcSum(1, 10));
+      System.out.println("1 ~ 10 = " + calcSum(15, 100));
+   }
+   static int calcSum(int from, int to) {
+      if (from > to) {
+         return 0;
+      }
+      int sum = 0;
+      for (int i = from; i <= to; i++) {
+         sum += i;
+      }
+      return sum;
+   }
+}
+
+
+----------------------------
+
+package javas;
+
+public class javas {
+
+   public static void main(String[] args) {
+      printSum(1, 10);
+      printSum(15, 100);
+   }
+   static void printSum(int from, int to) {
+      int sum = 0;
+      for (int i = from; i <= to; i++) {
+         sum += i;
+      }
+      System.out.println(from + "~" + to + "=" + sum);
+   }
+}
+----------------------------
+
+package java_prac;
+
+public class prac {
+
+	public static void main(String[] args) {
+		for (int i = 1; i <= 10; i++) {
+			outStar(i);
+			System.out.println();
+		}
+	}
+
+	static void outStar(int num) {
+		for (int i = 0; i < num; i++) {
+			System.out.print("공부합시다");
+		}
+	}
+}
+
+
+--------------
+
+package java_prac;
+
+public class prac {
+
+	public static void main(String[] args) {
+		for (int i = 1; i <= 10; i++) {
+			outStar("　　", 10 - i);
+			//전각 공백 (ㄱ + 한자 + 1번)
+			outStar("공부", i);
+			System.out.println();
+		}
+	}
+
+	static void outStar(String ch, int num) {
+		for (int i = 0; i < num; i++) {
+			System.out.print(ch);
+		}
+	}
+}
+
+
+---------------
+
+
+package java_prac;
+
+public class prac {
+
+	public static void main(String[] args) {
+		for (int i = 1; i <= 10; i++) {
+			outStar("　　", 10 - i, false);
+			//전각 공백 (ㄱ + 한자 + 1번)
+			outStar("공부", i, true);
+		}
+	}
+
+	static void outStar(String ch, int num, boolean newLine) {
+		for (int i = 0; i < num; i++) {
+			System.out.print(ch);
+		}
+		if (newLine) {
+			System.out.println();
+		}
+	}
+}
+
+
+
+-------
+
+
+
